@@ -1,0 +1,6 @@
+src/DAL/bin/
+src/DAL/obj/
+src/TaskManagement/bin/
+src/TaskManagement/Logs/
+src/TaskManagement/obj/
+.vs/
