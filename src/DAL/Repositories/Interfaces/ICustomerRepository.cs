@@ -3,12 +3,12 @@
 // Email: support@ebenmonney.com
 // ====================================================
 
-using DAL.Models;
+using TM.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DAL.Repositories.Interfaces
+namespace TM.Data.Repositories.Interfaces
 {
     public interface ICustomerRepository : IRepository<Customer>
     {

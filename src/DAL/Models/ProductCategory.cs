@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DAL.Models
+namespace TM.Data.Models
 {
     public class ProductCategory : AuditableEntity
     {

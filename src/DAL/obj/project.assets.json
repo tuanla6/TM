@@ -7853,9 +7853,9 @@
   "project": {
     "version": "2.7.1",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\Angular\\TaskManagement\\src\\DAL\\DAL.csproj",
-      "projectName": "DAL",
-      "projectPath": "D:\\Dev\\Angular\\TaskManagement\\src\\DAL\\DAL.csproj",
+      "projectUniqueName": "D:\\Dev\\Angular\\TaskManagement\\src\\DAL\\TM.Data.csproj",
+      "projectName": "TM.Data",
+      "projectPath": "D:\\Dev\\Angular\\TaskManagement\\src\\DAL\\TM.Data.csproj",
       "packagesPath": "C:\\Users\\LeTuan\\.nuget\\packages\\",
       "outputPath": "D:\\Dev\\Angular\\TaskManagement\\src\\DAL\\obj\\",
       "projectStyle": "PackageReference",

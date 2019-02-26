@@ -3,14 +3,14 @@
 // Email: support@ebenmonney.com
 // ====================================================
 
-using DAL.Core;
+using TM.Data.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Models
+namespace TM.Data.Models
 {
     public class Customer : AuditableEntity
     {

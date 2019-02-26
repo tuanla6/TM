@@ -4,8 +4,8 @@
 // ====================================================
 
 using AutoMapper;
-using DAL.Core;
-using DAL.Models;
+using TM.Data.Core;
+using TM.Data.Models;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;

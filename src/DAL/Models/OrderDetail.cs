@@ -6,7 +6,7 @@
 using System;
 using System.Linq;
 
-namespace DAL.Models
+namespace TM.Data.Models
 {
     public class OrderDetail : AuditableEntity
     {

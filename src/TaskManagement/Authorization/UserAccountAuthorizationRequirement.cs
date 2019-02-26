@@ -1,4 +1,4 @@
-﻿using DAL.Core;
+﻿using TM.Data.Core;
 using Microsoft.AspNetCore.Authorization;
 using TaskManagement.Helpers;
 using System.Collections.Generic;

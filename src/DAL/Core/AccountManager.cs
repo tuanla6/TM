@@ -1,15 +1,7 @@
-﻿// ====================================================
-// More Templates: https://taskmanagementsystem.net/templates
-// Email: support@ebenmonney.com
-// ====================================================
-
-// ==> Get TaskManagement PREMIUM TEMPLATES
-// ==> https://taskmanagementsystem.net/shop
-// ====================================
-
-using DAL;
-using DAL.Core.Interfaces;
-using DAL.Models;
+﻿
+using TM.Data;
+using TM.Data.Core.Interfaces;
+using TM.Data.Models;
 using AspNet.Security.OpenIdConnect.Primitives;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -18,11 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
-using DAL.Core;
 
-namespace DAL.Core
+namespace TM.Data.Core
 {
     public class AccountManager : IAccountManager
     {

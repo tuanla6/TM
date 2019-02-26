@@ -5026,7 +5026,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "DAL/2.7.1": {
+      "TM.Data/2.7.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -5035,10 +5035,10 @@
           "OpenIddict.EntityFrameworkCore": "2.0.0"
         },
         "compile": {
-          "bin/placeholder/DAL.dll": {}
+          "bin/placeholder/TM.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DAL.dll": {}
+          "bin/placeholder/TM.Data.dll": {}
         }
       }
     }
@@ -13493,16 +13493,15 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "DAL/2.7.1": {
+    "TM.Data/2.7.1": {
       "type": "project",
-      "path": "../DAL/DAL.csproj",
-      "msbuildProject": "../DAL/DAL.csproj"
+      "path": "../DAL/TM.Data.csproj",
+      "msbuildProject": "../DAL/TM.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "AutoMapper >= 8.0.0",
-      "DAL >= 2.7.1",
       "FluentValidation.AspNetCore >= 8.0.101",
       "MailKit >= 2.0.7",
       "Microsoft.AspNetCore.App >= 2.1.1",
@@ -13511,7 +13510,8 @@
       "OpenIddict >= 2.0.0",
       "OpenIddict.EntityFrameworkCore >= 2.0.0",
       "Serilog.Extensions.Logging.File >= 1.1.0",
-      "Swashbuckle.AspNetCore >= 4.0.1"
+      "Swashbuckle.AspNetCore >= 4.0.1",
+      "TM.Data >= 2.7.1"
     ]
   },
   "packageFolders": {
@@ -13545,8 +13545,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Dev\\Angular\\TaskManagement\\src\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\Dev\\Angular\\TaskManagement\\src\\DAL\\DAL.csproj"
+            "D:\\Dev\\Angular\\TaskManagement\\src\\DAL\\TM.Data.csproj": {
+              "projectPath": "D:\\Dev\\Angular\\TaskManagement\\src\\DAL\\TM.Data.csproj"
             }
           }
         }

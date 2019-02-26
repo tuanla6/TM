@@ -1,20 +1,12 @@
-﻿// ====================================================
-// More Templates: https://taskmanagementsystem.net/templates
-// Email: support@ebenmonney.com
-// ====================================================
-
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using DAL;
+using TM.Data;
 using TaskManagement.ViewModels;
 using AutoMapper;
-using DAL.Models;
 using Microsoft.Extensions.Logging;
 using TaskManagement.Helpers;
-using Microsoft.Extensions.Options;
 
 namespace TaskManagement.Controllers
 {

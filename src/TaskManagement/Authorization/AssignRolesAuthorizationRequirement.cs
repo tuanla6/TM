@@ -1,5 +1,5 @@
 ﻿
-using DAL.Core;
+using TM.Data.Core;
 using Microsoft.AspNetCore.Authorization;
 using System;
 using System.Linq;

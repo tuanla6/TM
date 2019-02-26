@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 
-namespace DAL.Core
+namespace TM.Data.Core
 {
     public static class ApplicationPermissions
     {

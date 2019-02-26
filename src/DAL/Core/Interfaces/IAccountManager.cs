@@ -3,14 +3,14 @@
 // Email: support@ebenmonney.com
 // ====================================================
 
-using DAL.Models;
+using TM.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Core.Interfaces
+namespace TM.Data.Core.Interfaces
 {
     public interface IAccountManager
     {

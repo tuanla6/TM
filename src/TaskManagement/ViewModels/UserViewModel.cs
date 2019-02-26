@@ -3,7 +3,7 @@
 // Email: support@ebenmonney.com
 // ====================================================
 
-using DAL.Models;
+using TM.Data.Models;
 using FluentValidation;
 using TaskManagement.Helpers;
 using Microsoft.AspNetCore.Identity;

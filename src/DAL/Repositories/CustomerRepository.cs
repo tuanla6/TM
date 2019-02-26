@@ -9,10 +9,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using DAL.Models;
-using DAL.Repositories.Interfaces;
+using TM.Data.Models;
+using TM.Data.Repositories.Interfaces;
 
-namespace DAL.Repositories
+namespace TM.Data.Repositories
 {
     public class CustomerRepository : Repository<Customer>, ICustomerRepository
     {

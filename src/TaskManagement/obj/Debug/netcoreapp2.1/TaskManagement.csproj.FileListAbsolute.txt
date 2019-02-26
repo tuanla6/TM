@@ -31,8 +31,8 @@ D:\Dev\Angular\TaskManagement\src\TaskManagement\bin\Debug\netcoreapp2.1\TaskMan
 D:\Dev\Angular\TaskManagement\src\TaskManagement\bin\Debug\netcoreapp2.1\TaskManagement.pdb
 D:\Dev\Angular\TaskManagement\src\TaskManagement\bin\Debug\netcoreapp2.1\TaskManagement.Views.dll
 D:\Dev\Angular\TaskManagement\src\TaskManagement\bin\Debug\netcoreapp2.1\TaskManagement.Views.pdb
-D:\Dev\Angular\TaskManagement\src\TaskManagement\bin\Debug\netcoreapp2.1\DAL.dll
-D:\Dev\Angular\TaskManagement\src\TaskManagement\bin\Debug\netcoreapp2.1\DAL.pdb
+D:\Dev\Angular\TaskManagement\src\TaskManagement\bin\Debug\netcoreapp2.1\TM.Data.dll
+D:\Dev\Angular\TaskManagement\src\TaskManagement\bin\Debug\netcoreapp2.1\TM.Data.pdb
 D:\Dev\Angular\TaskManagement\src\TaskManagement\obj\Debug\netcoreapp2.1\TaskManagement.csprojAssemblyReference.cache
 D:\Dev\Angular\TaskManagement\src\TaskManagement\obj\Debug\netcoreapp2.1\TaskManagement.csproj.CoreCompileInputs.cache
 D:\Dev\Angular\TaskManagement\src\TaskManagement\obj\Debug\netcoreapp2.1\TaskManagement.RazorAssemblyInfo.cache

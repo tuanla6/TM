@@ -1,20 +1,13 @@
-﻿// ====================================================
-// More Templates: https://taskmanagementsystem.net/templates
-// Email: support@ebenmonney.com
-// ====================================================
-
-using DAL.Models;
+﻿using TM.Data.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
-using DAL.Models.Interfaces;
+using TM.Data.Models.Interfaces;
 
-namespace DAL
+namespace TM.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {

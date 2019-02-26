@@ -1,15 +1,11 @@
-﻿// ====================================================
-// More Templates: https://taskmanagementsystem.net/templates
-// Email: support@ebenmonney.com
-// ====================================================
-
+﻿
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
-using DAL.Models.Interfaces;
+using TM.Data.Models.Interfaces;
 
-namespace DAL.Models
+namespace TM.Data.Models
 {
     public class AuditableEntity : IAuditableEntity
     {

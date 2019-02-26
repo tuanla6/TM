@@ -12,12 +12,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using TaskManagement.ViewModels;
 using AutoMapper;
-using DAL.Models;
-using DAL.Core.Interfaces;
+using TM.Data.Models;
+using TM.Data.Core.Interfaces;
 using TaskManagement.Authorization;
 using TaskManagement.Helpers;
 using Microsoft.AspNetCore.JsonPatch;
-using DAL.Core;
+using TM.Data.Core;
 using OpenIddict.Validation;
 
 namespace TaskManagement.Controllers

@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DAL.Models.Interfaces
+namespace TM.Data.Models.Interfaces
 {
     public interface IAuditableEntity
     {

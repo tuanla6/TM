@@ -3,16 +3,16 @@
 // Email: support@ebenmonney.com
 // ====================================================
 
-using DAL.Models;
+using TM.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using DAL.Repositories.Interfaces;
+using TM.Data.Repositories.Interfaces;
 
-namespace DAL.Repositories
+namespace TM.Data.Repositories
 {
     public class ProductRepository : Repository<Product>, IProductRepository
     {

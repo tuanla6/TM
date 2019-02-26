@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Models
+namespace TM.Data.Models
 {
     public class Order : AuditableEntity
     {

@@ -1,14 +1,10 @@
-// ====================================================
-// More Templates: https://www.ebenmonney.com/templates
-// Email: support@ebenmonney.com
-// ====================================================
 
 using AspNet.Security.OpenIdConnect.Primitives;
 using AutoMapper;
-using DAL;
-using DAL.Core;
-using DAL.Core.Interfaces;
-using DAL.Models;
+using TM.Data;
+using TM.Data.Core;
+using TM.Data.Core.Interfaces;
+using TM.Data.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,7 +21,7 @@ using TaskManagement.Helpers;
 using TaskManagement.ViewModels;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
-using AppPermissions = DAL.Core.ApplicationPermissions;
+using AppPermissions = TM.Data.Core.ApplicationPermissions;
 
 namespace TaskManagement
 {

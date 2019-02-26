@@ -1,29 +1,18 @@
-﻿// ====================================================
-// More Templates: https://taskmanagementsystem.net/templates
-// Email: support@ebenmonney.com
-// ====================================================
-
-using DAL.Models;
-using Microsoft.AspNetCore.Identity;
+﻿using TM.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using DAL.Core;
-using DAL.Core.Interfaces;
+using TM.Data.Core;
+using TM.Data.Core.Interfaces;
 
-namespace DAL
+namespace TM.Data
 {
     public interface IDatabaseInitializer
     {
         Task SeedAsync();
     }
-
-
-
 
     public class DatabaseInitializer : IDatabaseInitializer
     {
