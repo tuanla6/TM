@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using TM.Data.Models.Interfaces;
+using Task = TM.Data.Models.Task;
 
 namespace TM.Data
 {
@@ -17,6 +18,7 @@ namespace TM.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<Task> Tasks { get; set; }
 
 
 
@@ -62,6 +64,8 @@ namespace TM.Data
             builder.Entity<OrderDetail>().ToTable($"App{nameof(this.OrderDetails)}");
             builder.Entity<OrderDetail>().Property(p => p.UnitPrice).HasColumnType(priceDecimalType);
             builder.Entity<OrderDetail>().Property(p => p.Discount).HasColumnType(priceDecimalType);
+
+            builder.Entity<Task>().ToTable($"App{nameof(this.Tasks)}");
         }
 
 
