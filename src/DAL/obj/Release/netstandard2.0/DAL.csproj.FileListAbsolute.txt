@@ -1,0 +1,9 @@
+D:\Dev\Angular\QuickApp-master\src\DAL\bin\Release\netstandard2.0\DAL.deps.json
+D:\Dev\Angular\QuickApp-master\src\DAL\bin\Release\netstandard2.0\DAL.dll
+D:\Dev\Angular\QuickApp-master\src\DAL\bin\Release\netstandard2.0\DAL.pdb
+D:\Dev\Angular\QuickApp-master\src\DAL\obj\Release\netstandard2.0\DAL.csprojAssemblyReference.cache
+D:\Dev\Angular\QuickApp-master\src\DAL\obj\Release\netstandard2.0\DAL.csproj.CoreCompileInputs.cache
+D:\Dev\Angular\QuickApp-master\src\DAL\obj\Release\netstandard2.0\DAL.AssemblyInfoInputs.cache
+D:\Dev\Angular\QuickApp-master\src\DAL\obj\Release\netstandard2.0\DAL.AssemblyInfo.cs
+D:\Dev\Angular\QuickApp-master\src\DAL\obj\Release\netstandard2.0\DAL.dll
+D:\Dev\Angular\QuickApp-master\src\DAL\obj\Release\netstandard2.0\DAL.pdb

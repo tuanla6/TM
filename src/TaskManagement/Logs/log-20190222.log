@@ -1,0 +1,115 @@
+2019-02-22T11:37:52.9297006+07:00 0HLKOFRBJ9SU2:00000001 [INF] The token request was successfully extracted from the HTTP request: "{
+  \"username\": \"tuanla\",
+  \"password\": \"[removed for security reasons]\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email phone profile offline_access roles\"
+}". (ebc01284)
+2019-02-22T11:37:52.9840107+07:00 0HLKOFRBJ9SU2:00000001 [DBG] The token request validation process was partially skipped because the 'client_id' parameter was missing or empty. (fcec36a0)
+2019-02-22T11:37:52.9882497+07:00 0HLKOFRBJ9SU2:00000001 [INF] The token request was successfully validated. (d7e51e65)
+2019-02-22T11:37:52.9980385+07:00 0HLKOFRBJ9SU2:00000001 [DBG] The default token request handling was skipped from user code. (72afae05)
+2019-02-22T11:37:54.2073031+07:00 0HLKOFRBJ9SU2:00000001 [INF] An ad hoc authorization was automatically created and associated with an unknown application: "7edb55b5-1676-49e0-98b4-66f531fc761a". (b5fe4ad7)
+2019-02-22T11:37:54.2364204+07:00 0HLKOFRBJ9SU2:00000001 [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T11:37:54.2392541+07:00 0HLKOFRBJ9SU2:00000001 [DBG] '"jobtitle"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T11:37:54.2423259+07:00 0HLKOFRBJ9SU2:00000001 [DBG] '"fullname"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T11:37:54.2451624+07:00 0HLKOFRBJ9SU2:00000001 [DBG] '"configuration"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T11:37:54.2479556+07:00 0HLKOFRBJ9SU2:00000001 [DBG] '"email"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T11:37:54.2526275+07:00 0HLKOFRBJ9SU2:00000001 [DBG] '"phone"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T11:37:54.4550192+07:00 0HLKOFRBJ9SU2:00000001 [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the identity token claims. (7dcd2335)
+2019-02-22T11:37:54.4890902+07:00 0HLKOFRBJ9SU2:00000001 [INF] The token response was successfully returned: "{
+  \"token_type\": \"Bearer\",
+  \"access_token\": \"[removed for security reasons]\",
+  \"expires_in\": 3600,
+  \"refresh_token\": \"[removed for security reasons]\",
+  \"id_token\": \"[removed for security reasons]\"
+}". (12d98310)
+2019-02-22T13:35:48.8122988+07:00 0HLKOHVH0C97T:00000001 [INF] The token request was successfully extracted from the HTTP request: "{
+  \"username\": \"tuanla\",
+  \"password\": \"[removed for security reasons]\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email phone profile offline_access roles\"
+}". (ebc01284)
+2019-02-22T13:35:48.8605408+07:00 0HLKOHVH0C97T:00000001 [DBG] The token request validation process was partially skipped because the 'client_id' parameter was missing or empty. (fcec36a0)
+2019-02-22T13:35:48.8639901+07:00 0HLKOHVH0C97T:00000001 [INF] The token request was successfully validated. (d7e51e65)
+2019-02-22T13:35:48.8774735+07:00 0HLKOHVH0C97T:00000001 [DBG] The default token request handling was skipped from user code. (72afae05)
+2019-02-22T13:35:49.9278423+07:00 0HLKOHVH0C97T:00000001 [INF] An ad hoc authorization was automatically created and associated with an unknown application: "f8b9c74e-b27b-4550-a80c-1d8188c0910d". (b5fe4ad7)
+2019-02-22T13:35:49.9544483+07:00 0HLKOHVH0C97T:00000001 [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T13:35:49.9584845+07:00 0HLKOHVH0C97T:00000001 [DBG] '"jobtitle"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T13:35:49.9610093+07:00 0HLKOHVH0C97T:00000001 [DBG] '"fullname"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T13:35:49.9634828+07:00 0HLKOHVH0C97T:00000001 [DBG] '"configuration"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T13:35:49.9658017+07:00 0HLKOHVH0C97T:00000001 [DBG] '"email"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T13:35:49.9682505+07:00 0HLKOHVH0C97T:00000001 [DBG] '"phone"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T13:35:50.1666315+07:00 0HLKOHVH0C97T:00000001 [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the identity token claims. (7dcd2335)
+2019-02-22T13:35:50.2001872+07:00 0HLKOHVH0C97T:00000001 [INF] The token response was successfully returned: "{
+  \"token_type\": \"Bearer\",
+  \"access_token\": \"[removed for security reasons]\",
+  \"expires_in\": 3600,
+  \"refresh_token\": \"[removed for security reasons]\",
+  \"id_token\": \"[removed for security reasons]\"
+}". (12d98310)
+2019-02-22T13:36:49.3345508+07:00 0HLKOHVH0C97S:00000003 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:36:49.3345509+07:00 0HLKOHVH0C97V:00000002 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:36:55.8934399+07:00 0HLKOHVH0C97T:00000004 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:36:55.9030635+07:00 0HLKOHVH0C97T:00000004 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:36:55.9299835+07:00 0HLKOHVH0C97V:00000003 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:36:55.9352308+07:00 0HLKOHVH0C97V:00000003 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:36:58.2703486+07:00 0HLKOHVH0C97S:00000004 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:36:58.2759175+07:00 0HLKOHVH0C97U:00000003 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:36:58.2788831+07:00 0HLKOHVH0C97S:00000004 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:36:58.2821011+07:00 0HLKOHVH0C97U:00000003 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:37:02.6431939+07:00 0HLKOHVH0C97V:00000004 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:37:02.6472237+07:00 0HLKOHVH0C97T:00000005 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:37:02.6500893+07:00 0HLKOHVH0C97V:00000004 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:37:02.6801319+07:00 0HLKOHVH0C97T:00000005 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:37:13.2680766+07:00 0HLKOHVH0C97U:00000004 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:37:13.2705328+07:00 0HLKOHVH0C97S:00000005 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:37:13.2744878+07:00 0HLKOHVH0C97U:00000004 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:37:31.9166083+07:00 0HLKOHVH0C97T:00000006 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:37:31.9189520+07:00 0HLKOHVH0C97U:00000005 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:37:31.9212555+07:00 0HLKOHVH0C97T:00000006 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T13:37:31.9468459+07:00 0HLKOHVH0C97U:00000005 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:37:29.6925192+07:00 0HLKOHVH0C97V:000000C1 [INF] "Bearer" was not authenticated. Failure message: "Authentication failed because the access token was expired." (48071232)
+2019-02-22T17:37:29.6925192+07:00 0HLKOHVH0C97R:000000C2 [INF] "Bearer" was not authenticated. Failure message: "Authentication failed because the access token was expired." (48071232)
+2019-02-22T17:37:29.7615958+07:00 0HLKOHVH0C97V:000000C1 [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2019-02-22T17:37:29.7632707+07:00 0HLKOHVH0C97R:000000C2 [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2019-02-22T17:37:29.8051458+07:00 0HLKOHVH0C97V:000000C2 [INF] The token request was successfully extracted from the HTTP request: "{
+  \"refresh_token\": \"[removed for security reasons]\",
+  \"grant_type\": \"refresh_token\",
+  \"scope\": \"openid email phone profile offline_access roles\"
+}". (ebc01284)
+2019-02-22T17:37:29.8093070+07:00 0HLKOHVH0C97V:000000C2 [DBG] The token request validation process was partially skipped because the 'client_id' parameter was missing or empty. (fcec36a0)
+2019-02-22T17:37:29.8126046+07:00 0HLKOHVH0C97V:000000C2 [INF] The token request was successfully validated. (d7e51e65)
+2019-02-22T17:37:31.0631706+07:00 0HLKOHVH0C97R:000000C3 [INF] "Bearer" was not authenticated. Failure message: "Authentication failed because the access token was expired." (48071232)
+2019-02-22T17:37:31.0713963+07:00 0HLKOHVH0C980:00000001 [INF] "Bearer" was not authenticated. Failure message: "Authentication failed because the access token was expired." (48071232)
+2019-02-22T17:37:31.0743787+07:00 0HLKOHVH0C97R:000000C3 [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2019-02-22T17:37:31.0755517+07:00 0HLKOHVH0C980:00000001 [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2019-02-22T17:37:31.6876953+07:00 0HLKOHVH0C97V:000000C2 [DBG] The default token request handling was skipped from user code. (72afae05)
+2019-02-22T17:37:31.7663515+07:00 0HLKOHVH0C97V:000000C2 [DBG] AuthenticationScheme: "ASOS" was successfully authenticated. (1805f3b3)
+2019-02-22T17:37:32.2158153+07:00 0HLKOHVH0C97V:000000C2 [INF] The expiration date of the refresh token '"fe6d4e8e-6717-4b4a-b01b-05eafeb93933"' was automatically updated: 03/08/2019 10:37:32 +00:00. (3e1903c1)
+2019-02-22T17:37:32.2216344+07:00 0HLKOHVH0C97V:000000C2 [DBG] The access token scopes will be limited to the scopes requested by the client application: "openid, email, phone, profile, offline_access, roles". (da314d7b)
+2019-02-22T17:37:32.2241365+07:00 0HLKOHVH0C97V:000000C2 [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T17:37:32.2262520+07:00 0HLKOHVH0C97V:000000C2 [DBG] '"jobtitle"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T17:37:32.2287322+07:00 0HLKOHVH0C97V:000000C2 [DBG] '"fullname"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T17:37:32.2314045+07:00 0HLKOHVH0C97V:000000C2 [DBG] '"configuration"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T17:37:32.2359814+07:00 0HLKOHVH0C97V:000000C2 [DBG] '"email"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T17:37:32.2381236+07:00 0HLKOHVH0C97V:000000C2 [DBG] '"phone"' was excluded from the access token claims. (ed8f369e)
+2019-02-22T17:37:32.2410101+07:00 0HLKOHVH0C97V:000000C2 [DBG] '"AspNet.Identity.SecurityStamp"' was excluded from the identity token claims. (7dcd2335)
+2019-02-22T17:37:32.2443873+07:00 0HLKOHVH0C97V:000000C2 [INF] The token response was successfully returned: "{
+  \"token_type\": \"Bearer\",
+  \"access_token\": \"[removed for security reasons]\",
+  \"expires_in\": 3600,
+  \"id_token\": \"[removed for security reasons]\"
+}". (12d98310)
+2019-02-22T17:37:32.2767780+07:00 0HLKOHVH0C97R:000000C4 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:37:32.2869088+07:00 0HLKOHVH0C980:00000002 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:37:32.3115929+07:00 0HLKOHVH0C97R:000000C4 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:37:32.3137166+07:00 0HLKOHVH0C97V:000000C3 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:37:32.3750137+07:00 0HLKOHVH0C97V:000000C3 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:37:32.6024332+07:00 0HLKOHVH0C97V:000000C4 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:37:32.6053489+07:00 0HLKOHVH0C97V:000000C4 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:37:33.9590669+07:00 0HLKOHVH0C97R:000000C5 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:37:33.9619408+07:00 0HLKOHVH0C980:00000003 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:37:33.9645750+07:00 0HLKOHVH0C97R:000000C5 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:37:33.9658091+07:00 0HLKOHVH0C980:00000003 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:38:05.0365207+07:00 0HLKOHVH0C980:00000004 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:38:05.0581001+07:00 0HLKOHVH0C97S:000000C4 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
+2019-02-22T17:38:05.0878157+07:00 0HLKOHVH0C97S:000000C4 [DBG] AuthenticationScheme: "Bearer" was successfully authenticated. (1805f3b3)
