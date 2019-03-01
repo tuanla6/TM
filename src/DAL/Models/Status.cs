@@ -8,6 +8,6 @@ namespace TM.Data.Models
     {
         public int Id { get; set; }
         public int StatusName { get; set; }
-        public ICollection<Task> Tasks { get; set; }
+        public ICollection<TaskInfo> Tasks { get; set; }
     }
 }

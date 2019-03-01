@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TM.Data.Models
 {
-    public class Task : AuditableEntity
+    public class TaskInfo : AuditableEntity
     {
         public int Id { get; set; }
         public string TaskName { get; set; }

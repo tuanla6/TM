@@ -56,6 +56,6 @@ namespace TM.Data.Models
         /// Demo Navigation property for orders this user has processed
         /// </summary>
         public ICollection<Order> Orders { get; set; }
-        public ICollection<Task> Tasks { get; set; }
+        public ICollection<TaskInfo> Tasks { get; set; }
     }
 }

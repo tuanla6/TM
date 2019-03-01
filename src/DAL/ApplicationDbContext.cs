@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using TM.Data.Models.Interfaces;
-using Task = TM.Data.Models.Task;
+using TM.Data.Models;
 
 namespace TM.Data
 {
@@ -18,8 +18,8 @@ namespace TM.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
-        public DbSet<Task> Tasks { get; set; }
-
+        public DbSet<TaskInfo> Tasks { get; set; }
+        public DbSet<Status> Status { get; set; }
 
 
         public ApplicationDbContext(DbContextOptions options) : base(options)
@@ -33,6 +33,7 @@ namespace TM.Data
 
             builder.Entity<ApplicationUser>().HasMany(u => u.Claims).WithOne().HasForeignKey(c => c.UserId).IsRequired().OnDelete(DeleteBehavior.Cascade);
             builder.Entity<ApplicationUser>().HasMany(u => u.Roles).WithOne().HasForeignKey(r => r.UserId).IsRequired().OnDelete(DeleteBehavior.Cascade);
+            builder.Entity<ApplicationUser>().HasMany(u => u.Tasks).WithOne().HasForeignKey(r => r.AssignUserId).IsRequired().OnDelete(DeleteBehavior.Cascade);
 
             builder.Entity<ApplicationRole>().HasMany(r => r.Claims).WithOne().HasForeignKey(c => c.RoleId).IsRequired().OnDelete(DeleteBehavior.Cascade);
             builder.Entity<ApplicationRole>().HasMany(r => r.Users).WithOne().HasForeignKey(r => r.RoleId).IsRequired().OnDelete(DeleteBehavior.Cascade);
@@ -65,7 +66,13 @@ namespace TM.Data
             builder.Entity<OrderDetail>().Property(p => p.UnitPrice).HasColumnType(priceDecimalType);
             builder.Entity<OrderDetail>().Property(p => p.Discount).HasColumnType(priceDecimalType);
 
-            builder.Entity<Task>().ToTable($"App{nameof(this.Tasks)}");
+            builder.Entity<TaskInfo>().ToTable($"App{nameof(this.Tasks)}");
+            builder.Entity<TaskInfo>().Property(p => p.TaskName).IsRequired().HasMaxLength(100);
+            builder.Entity<TaskInfo>().Property(p => p.Description).HasMaxLength(1000);
+            builder.Entity<TaskInfo>().HasIndex(c => c.TaskName);
+
+            builder.Entity<Status>().ToTable($"App{nameof(this.Status)}");
+            builder.Entity<Status>().Property(p => p.StatusName).IsRequired().HasMaxLength(50);
         }
 
 
