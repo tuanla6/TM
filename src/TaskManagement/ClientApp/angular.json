@@ -3,16 +3,10 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "taskmanagement": {
+    "inspinia": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
-      "schematics": {
-        "@schematics/angular:component": {
-          "styleext": "css"
-        }
-      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -20,33 +14,27 @@
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "progress": true,
-            "extractCss": true,
-            "showCircularDependencies": false,
+            "polyfills": "src/polyfills.ts",
             "assets": [
-              "src/assets"
+              "src/assets",
+              "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/animate.css/animate.min.css",
+              "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.js",
-              "node_modules/bootstrap-toggle/js/bootstrap-toggle.js",
-              "node_modules/bootstrap-select/dist/js/bootstrap-select.js",
-              "node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/metismenu/dist/metisMenu.js",
+              "node_modules/jquery-sparkline/jquery.sparkline.js",
+              "vendor/pace/pace.min.js"
             ]
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -56,11 +44,10 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [
+              "fileReplacements": [
                 {
-                  "type": "initial",
-                  "maximumWarning": "4mb",
-                  "maximumError": "10mb"
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
                 }
               ]
             }
@@ -69,33 +56,42 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "taskmanagement:build"
+            "browserTarget": "inspinia:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "taskmanagement:build:production"
+              "browserTarget": "inspinia:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "taskmanagement:build"
+            "browserTarget": "inspinia:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
+            "karmaConfig": "./karma.conf.js",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
-            "karmaConfig": "src/karma.conf.js",
-            "styles": [
-              "src/styles.css"
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/metismenu/dist/metisMenu.js",
+              "node_modules/jquery-sparkline/jquery.sparkline.js",
+              "vendor/pace/pace.min.js"
             ],
-            "scripts": [],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/animate.css/animate.min.css",
+              "src/styles.scss"
+            ],
             "assets": [
-              "src/assets"
+              "src/assets",
+              "src/favicon.ico"
             ]
           }
         },
@@ -106,41 +102,43 @@
               "src/tsconfig.app.json",
               "src/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": []
           }
         }
       }
     },
-    "taskmanagement-e2e": {
-      "root": "e2e/",
+    "inspinia-e2e": {
+      "root": "e2e",
+      "sourceRoot": "e2e",
       "projectType": "application",
-      "prefix": "",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "taskmanagement:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "taskmanagement:serve:production"
-            }
+            "protractorConfig": "./protractor.conf.js",
+            "devServerTarget": "inspinia:serve"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": [
+              "e2e/tsconfig.e2e.json"
+            ],
+            "exclude": []
           }
         }
       }
     }
   },
-  "defaultProject": "taskmanagement"
+  "defaultProject": "inspinia",
+  "schematics": {
+    "@schematics/angular:component": {
+      "prefix": "app",
+      "styleext": "css"
+    },
+    "@schematics/angular:directive": {
+      "prefix": "app"
+    }
+  }
 }

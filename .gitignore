@@ -4,3 +4,5 @@ src/TaskManagement/bin/
 src/TaskManagement/Logs/
 src/TaskManagement/obj/
 .vs/
+src/TaskManagement/ClientApp_bak/
+src/TaskManagement/ClientApp.rar

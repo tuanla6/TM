@@ -6,7 +6,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using TM.Data.Models.Interfaces;
-using TM.Data.Models;
 
 namespace TM.Data
 {
