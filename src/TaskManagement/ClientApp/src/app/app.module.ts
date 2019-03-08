@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {RouterModule} from "@angular/router";
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
-import * as jQuery from 'jquery';
 import {ROUTES} from "./app.routes";
 import { AppComponent } from './app.component';
 

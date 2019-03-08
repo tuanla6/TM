@@ -52,6 +52,36 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\assets\locale\ar.json" />
+    <None Remove="ClientApp\src\app\assets\locale\de.json" />
+    <None Remove="ClientApp\src\app\assets\locale\en.json" />
+    <None Remove="ClientApp\src\app\assets\locale\fr.json" />
+    <None Remove="ClientApp\src\app\assets\locale\ko.json" />
+    <None Remove="ClientApp\src\app\assets\locale\pt.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClientApp\src\app\assets\locale\ar.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\app\assets\locale\de.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\app\assets\locale\en.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\app\assets\locale\fr.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\app\assets\locale\ko.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\src\app\assets\locale\pt.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DAL\TM.Data.csproj" />
   </ItemGroup>
 
