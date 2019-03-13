@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class InspiniaPage {
+export class TmPage {
   navigateTo() {
     return browser.get('/');
   }

@@ -1,14 +1,14 @@
-import { InspiniaPage } from './app.po';
+import { TmPage } from './app.po';
 
-describe('inspinia App', () => {
-  let page: InspiniaPage;
+describe('TM App', () => {
+  let page: TmPage;
 
   beforeEach(() => {
-    page = new InspiniaPage();
+    page = new TmPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display application title: Task Management System', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Task Management System!');
   });
 });

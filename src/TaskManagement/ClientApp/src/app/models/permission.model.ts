@@ -1,8 +1,3 @@
-// ====================================================
-// More Templates: https://taskmanagementsystem.net/templates
-// Email: support@ebenmonney.com
-// ====================================================
-
 export type PermissionNames =
     'View Users' | 'Manage Users' |
     'View Roles' | 'Manage Roles' | 'Assign Roles';
