@@ -4,10 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-
+import * as jQuery from 'jquery';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-//import { ToastaModule } from 'ngx-toasta';
+import { ToastaModule } from 'ngx-toasta';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { PopoverModule } from 'ngx-bootstrap/popover';
@@ -17,7 +17,7 @@ import { ChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app.routes';
 import { AppErrorHandler } from './app-error.handler';
-//import { AppTitleService } from './services/app-title.service';
+import { AppTitleService } from './services/app-title.service';
 import { AppTranslationService, TranslateLanguageLoader } from './services/app-translation.service';
 import { ConfigurationService } from './services/configuration.service';
 import { AlertService } from './services/message.service';
@@ -84,7 +84,7 @@ import { JVectorMapModule } from './components/map/jvectorMap';
       }
     }),
     NgxDatatableModule,
-    //ToastaModule.forRoot(),
+    ToastaModule.forRoot(),
     TooltipModule.forRoot(),
     PopoverModule.forRoot(),
     BsDropdownModule.forRoot(),
@@ -95,7 +95,7 @@ import { JVectorMapModule } from './components/map/jvectorMap';
     IboxtoolsModule,
     PeityModule,
     SparklineModule,
-    JVectorMapModule
+    JVectorMapModule    
   ],
   declarations: [
     AppComponent,
@@ -132,7 +132,7 @@ import { JVectorMapModule } from './components/map/jvectorMap';
     { provide: ErrorHandler, useClass: AppErrorHandler },
     AlertService,
     ConfigurationService,
-    //AppTitleService,
+    AppTitleService,
     AppTranslationService,
     NotificationService,
     NotificationEndpoint,
