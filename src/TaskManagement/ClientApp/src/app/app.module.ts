@@ -28,22 +28,22 @@ import { NotificationEndpoint } from './services/notification-endpoint.service';
 import { AccountService } from './services/account.service';
 import { AccountEndpoint } from './services/account-endpoint.service';
 
-//import { EqualValidator } from './directives/equal-validator.directive';
-//import { LastElementDirective } from './directives/last-element.directive';
-//import { AutofocusDirective } from './directives/autofocus.directive';
-//import { BootstrapTabDirective } from './directives/bootstrap-tab.directive';
-//import { BootstrapToggleDirective } from './directives/bootstrap-toggle.directive';
-//import { BootstrapSelectDirective } from './directives/bootstrap-select.directive';
-//import { BootstrapDatepickerDirective } from './directives/bootstrap-datepicker.directive';
-//import { GroupByPipe } from './pipes/group-by.pipe';
+import { EqualValidator } from './directives/equal-validator.directive';
+import { LastElementDirective } from './directives/last-element.directive';
+import { AutofocusDirective } from './directives/autofocus.directive';
+import { BootstrapTabDirective } from './directives/bootstrap-tab.directive';
+import { BootstrapToggleDirective } from './directives/bootstrap-toggle.directive';
+import { BootstrapSelectDirective } from './directives/bootstrap-select.directive';
+import { BootstrapDatepickerDirective } from './directives/bootstrap-datepicker.directive';
+import { GroupByPipe } from './pipes/group-by.pipe';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './views/login/login.component';
 import { HomeComponent } from './views/home/home.component';
-//import { CustomersComponent } from './components/customers/customers.component';
+import { CustomersComponent } from './views/customers/customers.component';
 //import { ProductsComponent } from './components/products/products.component';
 //import { OrdersComponent } from './components/orders/orders.component';
-//import { SettingsComponent } from './components/settings/settings.component';
+import { SettingsComponent } from './views/settings/settings.component';
 //import { AboutComponent } from './components/about/about.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { BasicLayoutComponent } from "./components/common/layouts/basicLayout.component";
@@ -53,15 +53,15 @@ import { TopNavigationNavbarComponent } from "./components/common/topnavbar/topn
 import { TopNavbarComponent } from "./components/common/topnavbar/topnavbar.component";
 import { NavigationComponent } from "./components/common/navigation/navigation.component";
 //import { BannerDemoComponent } from './components/controls/banner-demo.component';
-//import { TodoDemoComponent } from './components/controls/todo-demo.component';
+import { TodoDemoComponent } from './components/controls/todo-demo.component';
 //import { StatisticsDemoComponent } from './components/controls/statistics-demo.component';
 import { NotificationsViewerComponent } from './components/controls/notifications-viewer.component';
-//import { SearchBoxComponent } from './components/controls/search-box.component';
-//import { UserInfoComponent } from './components/controls/user-info.component';
-//import { UserPreferencesComponent } from './components/controls/user-preferences.component';
-//import { UsersManagementComponent } from './components/controls/users-management.component';
-//import { RolesManagementComponent } from './components/controls/roles-management.component';
-//import { RoleEditorComponent } from './components/controls/role-editor.component';
+import { SearchBoxComponent } from './components/controls/search-box.component';
+import { UserInfoComponent } from './components/controls/user-info.component';
+import { UserPreferencesComponent } from './components/controls/user-preferences.component';
+import { UsersManagementComponent } from './components/controls/users-management.component';
+import { RolesManagementComponent } from './components/controls/roles-management.component';
+import { RoleEditorComponent } from './components/controls/role-editor.component';
 
 
 import { FlotModule } from './components/charts/flotChart';
@@ -101,12 +101,12 @@ import { JVectorMapModule } from './components/map/jvectorMap';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    //CustomersComponent,
+    CustomersComponent,
     //ProductsComponent,
     //OrdersComponent,
-    //SettingsComponent,
-    //UsersManagementComponent, UserInfoComponent, UserPreferencesComponent,
-    //RolesManagementComponent, RoleEditorComponent,
+    SettingsComponent,
+    UsersManagementComponent, UserInfoComponent, UserPreferencesComponent,
+    RolesManagementComponent, RoleEditorComponent,
     //AboutComponent,
     NotFoundComponent,
     BasicLayoutComponent,
@@ -115,17 +115,18 @@ import { JVectorMapModule } from './components/map/jvectorMap';
     TopNavigationNavbarComponent,
     TopNavbarComponent,
     NavigationComponent,
-    NotificationsViewerComponent
-    //SearchBoxComponent,
+    NotificationsViewerComponent,
+    SearchBoxComponent,
+    TodoDemoComponent,
     //StatisticsDemoComponent, TodoDemoComponent, BannerDemoComponent,
-    //EqualValidator,
-    //LastElementDirective,
-    //AutofocusDirective,
-    //BootstrapTabDirective,
-    //BootstrapToggleDirective,
-    //BootstrapSelectDirective,
-    //BootstrapDatepickerDirective,
-    //GroupByPipe
+    EqualValidator,
+    LastElementDirective,
+    AutofocusDirective,
+    BootstrapTabDirective,
+    BootstrapToggleDirective,
+    BootstrapSelectDirective,
+    BootstrapDatepickerDirective,
+    GroupByPipe
   ],
   providers: [
     { provide: 'BASE_URL', useFactory: getBaseUrl },

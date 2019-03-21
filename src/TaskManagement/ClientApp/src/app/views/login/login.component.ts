@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
-
+import { ToastaService, ToastaConfig, ToastOptions, ToastData } from 'ngx-toasta';
 import { AlertService, MessageSeverity, MessageType } from '../../services/message.service';
 import { AuthService } from '../../services/auth.service';
 import { ConfigurationService } from '../../services/configuration.service';

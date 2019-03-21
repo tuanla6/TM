@@ -4,9 +4,6 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, Subject, forkJoin } from 'rxjs';
 import { mergeMap, tap } from 'rxjs/operators';
 
-
-
-
 import { AccountEndpoint } from './account-endpoint.service';
 import { AuthService } from './auth.service';
 import { User } from '../models/user';
@@ -61,18 +58,19 @@ export class AccountService {
   }
 
 
-  //updateUser(user: UserEdit) {
-  //  if (user.id) {
-  //    return this.accountEndpoint.getUpdateUserEndpoint(user, user.id);
-  //  }
-  //  else {
-  //    return this.accountEndpoint.getUserByUserNameEndpoint<User>(user.userName).pipe<User>(
-  //      mergeMap(foundUser => {
-  //        user.id = foundUser.id;
-  //        return this.accountEndpoint.getUpdateUserEndpoint(user, user.id);
-  //      }));
-  //  }
-  //}
+  updateUser(user: UserEdit) {
+    if (user.id) {
+      return this.accountEndpoint.getUpdateUserEndpoint(user, user.id);
+    }
+    else {
+      //return this.accountEndpoint.getUserByUserNameEndpoint<User>(user.userName).pipe<User>(
+      //  mergeMap(foundUser => {
+      //    user.id = foundUser.id;
+      //    return this.accountEndpoint.getUpdateUserEndpoint(user, user.id);
+      //  }));
+      return null;
+    }
+  }
 
 
   newUser(user: UserEdit) {

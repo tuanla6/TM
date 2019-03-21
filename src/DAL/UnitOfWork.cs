@@ -10,7 +10,7 @@ namespace TM.Data
         ICustomerRepository _customers;
         IProductRepository _products;
         IOrdersRepository _orders;
-
+        ITaskRepository _tasks;
 
 
         public UnitOfWork(ApplicationDbContext context)

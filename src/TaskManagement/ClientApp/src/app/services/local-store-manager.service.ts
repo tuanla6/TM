@@ -1,8 +1,3 @@
-// ====================================================
-// More Templates: https://taskmanagementsystem.net/templates
-// Email: support@ebenmonney.com
-// ====================================================
-
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 

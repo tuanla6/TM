@@ -10,11 +10,11 @@
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
-    <Description>ASPNET Core 2.1 - Angular7 startup template for Quick Application Development</Description>
-    <Copyright>Copyright © 2018 www.ebenmonney.com</Copyright>
-    <PackageProjectUrl>https://github.com/emonney/QuickApp</PackageProjectUrl>
-    <Company>EBENMONNEY</Company>
-    <Version>2.7.1</Version>
+    <Description>ASPNET Core 2.1 - Angular7 for Task Management</Description>
+    <Copyright>Copyright © 2019</Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <Company>TM</Company>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +23,7 @@
     <PackageReference Include="MailKit" Version="2.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
     <PackageReference Include="OpenIddict" Version="2.0.0" />
     <PackageReference Include="OpenIddict.EntityFrameworkCore" Version="2.0.0" />
     <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.1.0" />

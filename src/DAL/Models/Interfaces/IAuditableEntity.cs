@@ -1,9 +1,4 @@
-﻿// ====================================================
-// More Templates: https://taskmanagementsystem.net/templates
-// Email: support@ebenmonney.com
-// ====================================================
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
