@@ -27,6 +27,8 @@ import { NotificationService } from './services/notification.service';
 import { NotificationEndpoint } from './services/notification-endpoint.service';
 import { AccountService } from './services/account.service';
 import { AccountEndpoint } from './services/account-endpoint.service';
+import { TaskService } from './services/task.service';
+import { TaskEndpoint } from './services/task-endpoint.service';
 
 import { EqualValidator } from './directives/equal-validator.directive';
 import { LastElementDirective } from './directives/last-element.directive';
@@ -41,7 +43,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './views/login/login.component';
 import { HomeComponent } from './views/home/home.component';
 import { CustomersComponent } from './views/customers/customers.component';
-//import { ProductsComponent } from './components/products/products.component';
+import { TasksComponent } from './views/tasks/tasks.component';
 //import { OrdersComponent } from './components/orders/orders.component';
 import { SettingsComponent } from './views/settings/settings.component';
 //import { AboutComponent } from './components/about/about.component';
@@ -102,7 +104,7 @@ import { JVectorMapModule } from './components/map/jvectorMap';
     LoginComponent,
     HomeComponent,
     CustomersComponent,
-    //ProductsComponent,
+    TasksComponent,
     //OrdersComponent,
     SettingsComponent,
     UsersManagementComponent, UserInfoComponent, UserPreferencesComponent,
@@ -139,6 +141,8 @@ import { JVectorMapModule } from './components/map/jvectorMap';
     NotificationEndpoint,
     AccountService,
     AccountEndpoint,
+    TaskService,
+    TaskEndpoint,
     LocalStoreManager,
     EndpointFactory
   ],

@@ -19,6 +19,7 @@ import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth-guard.service';
 import { SettingsComponent } from './views/settings/settings.component';
 import { CustomersComponent } from './views/customers/customers.component';
+import { TasksComponent } from './views/tasks/tasks.component';
 
 const routes: Routes = [
   //{ path: '', redirectTo: 'starterview', pathMatch: 'full' },
@@ -51,7 +52,8 @@ const routes: Routes = [
     children: [
       { path: '', component: HomeComponent, canActivate: [AuthGuard], data: { title: 'Home' } },
       { path: 'settings', component: SettingsComponent, canActivate: [AuthGuard], data: { title: 'Settings' } },
-      { path: 'customers', component: CustomersComponent, canActivate: [AuthGuard], data: { title: 'Customers' } }
+      { path: 'customers', component: CustomersComponent, canActivate: [AuthGuard], data: { title: 'Customers' } },
+      { path: 'tasks', component: TasksComponent, canActivate: [AuthGuard], data: { title: 'Tasks' } }
     ]
   },
   {
