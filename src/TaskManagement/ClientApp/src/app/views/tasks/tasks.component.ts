@@ -88,16 +88,7 @@ export class TasksComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
-    this.loadingIndicator = true;
-
-    //this.fetch((data) => {
-    //  this.refreshDataIndexes(data);
-    //  this.rows = data;
-    //  this.rowsCache = [...data];
-    //  this.isDataLoaded = true;
-
-    //  setTimeout(() => { this.loadingIndicator = false; }, 1500);
-    //});
+    this.loadingIndicator = true;  
 
 
     const gT = (key: string) => this.translationService.getTranslation(key);

@@ -68,13 +68,13 @@ export class TaskEndpoint extends EndpointFactory {
   }
 
 
-  //getNewUserEndpoint<T>(userObject: any): Observable<T> {
+  addNewTaskEndpoint<T>(taskObject: any): Observable<T> {
 
-  //  return this.http.post<T>(this.usersUrl, JSON.stringify(userObject), this.getRequestHeaders()).pipe<T>(
-  //    catchError(error => {
-  //      return this.handleError(error, () => this.getNewUserEndpoint(userObject));
-  //    }));
-  //}
+    return this.http.post<T>(this.tasksUrl, JSON.stringify(taskObject), this.getRequestHeaders()).pipe<T>(
+      catchError(error => {
+        return this.handleError(error, () => this.addNewTaskEndpoint(taskObject));
+      }));
+  }
 
   //getUpdateUserEndpoint<T>(userObject: any, userId?: string): Observable<T> {
   //  const endpointUrl = userId ? `${this.usersUrl}/${userId}` : this.currentUserUrl;

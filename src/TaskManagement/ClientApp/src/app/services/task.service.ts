@@ -74,9 +74,9 @@ export class TaskService {
   //}
 
 
-  //newUser(user: UserEdit) {
-  //  return this.taskEndpoint.getNewUserEndpoint<User>(user);
-  //}
+  addNewTask(task: TaskInfo) {
+    return this.taskEndpoint.addNewTaskEndpoint<TaskInfo>(task);
+ }
 
 
   //getUserPreferences() {

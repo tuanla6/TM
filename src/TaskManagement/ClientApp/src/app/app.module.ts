@@ -64,6 +64,7 @@ import { UserPreferencesComponent } from './components/controls/user-preferences
 import { UsersManagementComponent } from './components/controls/users-management.component';
 import { RolesManagementComponent } from './components/controls/roles-management.component';
 import { RoleEditorComponent } from './components/controls/role-editor.component';
+import { TaskeditorComponent } from './views/tasks/taskeditor/taskeditor.component'
 
 
 import { FlotModule } from './components/charts/flotChart';
@@ -71,6 +72,7 @@ import { IboxtoolsModule } from './components/common/iboxtools/iboxtools.module'
 import { PeityModule } from './components/charts/peity';
 import { SparklineModule } from './components/charts/sparkline';
 import { JVectorMapModule } from './components/map/jvectorMap';
+
 
 @NgModule({
   imports: [
@@ -128,7 +130,9 @@ import { JVectorMapModule } from './components/map/jvectorMap';
     BootstrapToggleDirective,
     BootstrapSelectDirective,
     BootstrapDatepickerDirective,
-    GroupByPipe
+    GroupByPipe,
+    TaskeditorComponent
+    
   ],
   providers: [
     { provide: 'BASE_URL', useFactory: getBaseUrl },
