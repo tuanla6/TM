@@ -9,5 +9,6 @@ namespace TM.Data.Core.Interfaces
     public interface ITaskManager
     {
         Task<List<TaskInfo>> GetTasks(int page, int pageSize);
+        Task CreateTaskAsync(TaskInfo task);
     }
 }

@@ -31,10 +31,7 @@ namespace TM.Data.Core
             _context.CurrentUserId = httpAccessor.HttpContext?.User.FindFirst(OpenIdConnectConstants.Claims.Subject)?.Value?.Trim();
             _userManager = userManager;
             _roleManager = roleManager;
-        }
-
-
-
+        }      
 
         public async Task<ApplicationUser> GetUserByIdAsync(string userId)
         {

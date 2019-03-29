@@ -1,6 +1,6 @@
 export class TaskInfo {
   // Note: Using only optional constructor properties without backing store disables typescript's type checking for the type
-  constructor(id?: string, taskName?: string, description?: string, userId?: string, assignedDate?: Date,
+  constructor(id?: number, taskName?: string, description?: string, userId?: string, assignedDate?: Date,
     dueDate?: Date, statusId?: number) {
 
     this.id = id;
@@ -12,7 +12,7 @@ export class TaskInfo {
     this.statusId = statusId;
   }  
 
-  public id: string;
+  public id: number;
   public taskName: string;
   public description: string;
   public userId: string;

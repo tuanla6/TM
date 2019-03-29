@@ -8,6 +8,7 @@ import { LocalStoreManager } from '../../services/local-store-manager.service';
 import { Utilities } from '../../services/utilities';
 import { TaskService } from '../../services/task.service';
 import { TaskInfo } from 'app/models/task';
+import { TaskeditorComponent } from './taskeditor/taskeditor.component';
 
 
 
@@ -23,13 +24,13 @@ export class TasksComponent implements OnInit, OnDestroy {
   rowsCache = [];
   columns = [];
   editing = {};
-  taskEdit = {};
+  //taskEdit = {};
   isDataLoaded = false;
   loadingIndicator = true;
   formResetToggle = true;
   _currentUserId: string;
   _hideCompletedTasks = false;
-
+  editedTask: TaskInfo;
 
   get currentUserId() {
     if (this.authService.currentUser)
@@ -78,6 +79,8 @@ export class TasksComponent implements OnInit, OnDestroy {
 
   @ViewChild('editorModal')
   editorModal: ModalDirective;
+  @ViewChild('taskEditor')
+  taskEditor: TaskeditorComponent;
 
 
   constructor(private alertService: AlertService, private translationService: AppTranslationService,
@@ -112,7 +115,9 @@ export class TasksComponent implements OnInit, OnDestroy {
     //this.saveToDisk();
   }
 
-
+  onEditorModalHidden() {
+    this.taskEditor.resetForm(true);
+  }
 
   fetch(cb) {
     let data = this.getData();
@@ -120,23 +125,7 @@ export class TasksComponent implements OnInit, OnDestroy {
     if (data == null) {
       setTimeout(() => {
 
-        data = this.getData();
-
-        //if (data == null) {
-        //  data = [
-        //    {
-        //      'completed': true, 'important': true, 'name': 'Create visual studio extension',
-        //      'description': 'Create a visual studio VSIX extension package that will add this project as an aspnet-core project template'
-        //    },
-        //    { 'completed': false, 'important': true, 'name': 'Do a quick how-to writeup', 'description': '' },
-        //    {
-        //      'completed': false, 'important': false, 'name': 'Create aspnet-core/angular7 tutorials based on this project',
-        //      'description': 'Create tutorials (blog/video/youtube) on how to build applications (full stack) using ' +
-        //        'aspnet-core/angular7. The tutorial will focus on getting productive with the technology right away rather ' +
-        //        'than the details on how and why they work so audience can get onboard quickly.'
-        //    },
-        //  ];
-        //}
+        data = this.getData();              
 
         cb(data);
       }, 1000);
@@ -173,14 +162,27 @@ export class TasksComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       this.formResetToggle = true;
 
-      this.taskEdit = {};
+      this.editedTask = this.taskEditor.newTask();
       this.editorModal.show();
     });
   }
 
+  ngAfterViewInit() {
+
+    this.taskEditor.changesSavedCallback = () => {
+      this.loadData();
+      this.editorModal.hide();
+    };
+
+    this.taskEditor.changesCancelledCallback = () => {
+      this.editedTask = null;      
+      this.editorModal.hide();
+    };
+  }
+
   save() {
-    this.rowsCache.splice(0, 0, this.taskEdit);
-    this.rows.splice(0, 0, this.taskEdit);
+    //this.rowsCache.splice(0, 0, this.taskEdit);
+    //this.rows.splice(0, 0, this.taskEdit);
     this.refreshDataIndexes(this.rowsCache);
     this.rows = [...this.rows];
 

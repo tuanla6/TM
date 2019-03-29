@@ -42,7 +42,7 @@
     </ng-template>
 
     <ng-template #nameTemplate let-row="row" let-value="value">
-      <span *ngIf="!editing[row.$$index + '-taskname']" class="inline-label" [class.completed]="row.completed" attr.title="Double click to edit - {{value}}" (dblclick)="editing[row.$$index + '-taskname'] = true">
+      <span *ngIf="!editing[row.$$index + '-name']" class="inline-label" [class.completed]="row.completed" attr.title="Double click to edit - {{value}}" (dblclick)="editing[row.$$index + '-name'] = true">
         {{value}}
       </span>
       <input *ngIf="editing[row.$$index + '-taskname']" class="inline-editor" appAutofocus (blur)="updateValue($event, 'taskname', value, row)" type="text" [value]="value" />
@@ -65,14 +65,27 @@
     </ng-template>
 
 
+    <!--<div class="modal fade" bsModal #editorModal="bs-modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title pull-left"><i class="fa fa-tasks"></i> {{'task.editor.NewTask' | translate}}</h4>
+          <button type="button" class="close pull-right" title="Close" (click)="editorModal.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <app-taskeditor #taskEditor></app-taskeditor>
 
-
-
-    <div class="modal fade" bsModal #editorModal="bs-modal" tabindex="-1">
-      <div class="modal-dialog">
+        </div>
+      </div>
+    </div>
+  </div>-->
+    <div class="modal fade" bsModal #editorModal="bs-modal" (onHidden)="onEditorModalHidden()" [config]="{backdrop: 'static'}" tabindex="-1">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title pull-left"><i class="fa fa-tasks"></i> {{'task.editor.NewTask' | translate}}</h4>
+            <h4 class="modal-title pull-left"><i class="fa fa-user-circle-o"></i> {{'task.editor.NewTask' | translate}}</h4>
             <button type="button" class="close pull-right" title="Close" (click)="editorModal.hide()">
               <span aria-hidden="true">&times;</span>
             </button>

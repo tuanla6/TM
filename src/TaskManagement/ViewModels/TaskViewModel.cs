@@ -12,7 +12,7 @@ namespace TaskManagement.ViewModels
         public string Description { get; set; }
         public DateTime? AssignedDate { get; set; }
         public DateTime? DueDate { get; set; }
-        public string Status { get; set; }
+        public int? StatusId { get; set; }
         public string AssignUserId { get; set; }
     }
 }

@@ -181,6 +181,19 @@ namespace TaskManagement
 
             // DB Creation and Seeding
             services.AddTransient<IDatabaseInitializer, DatabaseInitializer>();
+            //var mappingConfig = new MapperConfiguration(mc =>
+            //{
+            //    mc.AddProfile<MappingProfile>();
+            //});
+            //IMapper mapper = mappingConfig.CreateMapper();
+            //services.AddSingleton(mapper);
+
+            //Mapper.Initialize(cfg =>
+            //{
+            //    cfg.AddProfile<MappingProfile>();
+            //});
+
+
         }
 
 

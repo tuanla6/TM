@@ -31,5 +31,20 @@ namespace TM.Data.Core
             return await taskQuery.ToListAsync();
                         
         }
+
+        public async Task CreateTaskAsync(TaskInfo task)
+        {                      
+
+            try
+            {
+                _context.Tasks.Add(task);
+                await _context.SaveChangesAsync();
+            }
+            catch
+            {                
+                throw;
+            }            
+            
+        }
     }
 }

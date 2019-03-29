@@ -28,6 +28,12 @@ namespace TaskManagement.ViewModels
                 .ForMember(d => d.Roles, map => map.Ignore());
             CreateMap<UserEditViewModel, ApplicationUser>()
                 .ForMember(d => d.Roles, map => map.Ignore());
+            CreateMap<TaskViewModel, TaskInfo>().ForMember(t => t.CreatedBy, i => i.Ignore())
+                .ForMember(t => t.CreatedDate, i => i.Ignore())
+                .ForMember(t => t.UpdatedBy, i => i.Ignore())
+                .ForMember(t => t.UpdatedDate, i => i.Ignore())
+                .ForMember(t => t.Status, i => i.Ignore())
+                .ForMember(t=>t.AssignUser, map=>map.Ignore());
 
             CreateMap<ApplicationUser, UserPatchViewModel>()
                 .ReverseMap();
