@@ -18,7 +18,7 @@ namespace TM.Data
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<TaskInfo> Tasks { get; set; }
-        public DbSet<Status> Status { get; set; }
+        public DbSet<Status> Statuses { get; set; }
 
 
         public ApplicationDbContext(DbContextOptions options) : base(options)
@@ -70,7 +70,7 @@ namespace TM.Data
             builder.Entity<TaskInfo>().Property(p => p.Description).HasMaxLength(1000);
             builder.Entity<TaskInfo>().HasIndex(c => c.TaskName);
 
-            builder.Entity<Status>().ToTable($"App{nameof(this.Status)}");
+            builder.Entity<Status>().ToTable($"App{nameof(this.Statuses)}");
             builder.Entity<Status>().Property(p => p.StatusName).IsRequired().HasMaxLength(50);
         }
 

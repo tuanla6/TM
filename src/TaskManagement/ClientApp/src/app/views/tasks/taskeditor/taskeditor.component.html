@@ -15,16 +15,30 @@
       </div>
     </div>
 
-    <div class="form-group description-form-group">
+    <!--<div class="form-group description-form-group">
       <label class="control-label col-md-2" for="taskDescription">{{'task.editor.Description' | translate}}:</label>
       <div class="col-md-10">
         <input type="text" id="taskDescriptionText" name="description" placeholder="Enter task description" class="form-control" [(ngModel)]="taskEdit && taskEdit.description" #description="ngModel" />
+      </div>
+    </div>-->
+    <div class="form-group description-form-group">
+      <label class="control-label col-md-2" for="taskDescription">{{'task.editor.Description' | translate}}:</label>
+      <div class="col-md-10">
+        <textarea id="taskDescription" rows="4" cols="70" name="description" placeholder="Enter task description" class="form-control" [(ngModel)]="taskEdit && taskEdit.description" #description="ngModel"></textarea>
       </div>
     </div>
     <div class="form-group description-form-group">
       <label class="control-label col-md-2" for="taskDescription">{{'task.editor.Description' | translate}}:</label>
       <div class="col-md-10">
-        <textarea id="taskDescription" rows="4" cols="70" name="taskDescription" placeholder="Enter task description" class="form-control"></textarea>
+        <select id="status-info" name="statuses" [(ngModel)]="statuses" #allStatus="ngModel" #statusSelector="bootstrap-select" appBootstrapSelect class="selectpicker form-control">
+          <option *ngFor="let status of statuses" attr.value="{{status.id}}">
+            {{status.statusName}}
+          </option>
+        </select>
+        <!--<span *ngIf="showValidationErrors && f.submitted" class="glyphicon form-control-feedback" [ngClass]="{'glyphicon-ok ': roles.valid, 'glyphicon-remove' : !roles.valid}"></span>
+        <span *ngIf="showValidationErrors && f.submitted && !roles.valid" class="errorMessage">
+          {{'users.editor.RoleRequired' | translate}}
+        </span>-->
       </div>
     </div>
     <label class="control-label col-md-2"> </label>

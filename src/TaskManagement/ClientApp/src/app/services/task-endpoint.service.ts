@@ -11,6 +11,7 @@ import { ConfigurationService } from './configuration.service';
 export class TaskEndpoint extends EndpointFactory {
 
   private readonly _tasksUrl: string = '/api/task/tasks';
+  private readonly _statusesUrl: string = '/api/task/statuses';
   //private readonly _userByUserNameUrl: string = '/api/account/users/username';
   //private readonly _currentUserUrl: string = '/api/account/users/me';
   //private readonly _currentUserPreferencesUrl: string = '/api/account/users/me/preferences';
@@ -20,6 +21,7 @@ export class TaskEndpoint extends EndpointFactory {
   //private readonly _permissionsUrl: string = '/api/account/permissions';
 
   get tasksUrl() { return this.configurations.baseUrl + this._tasksUrl; }
+  get statusesUrl() { return this.configurations.baseUrl + this._statusesUrl;}
   //get userByUserNameUrl() { return this.configurations.baseUrl + this._userByUserNameUrl; }
   //get currentUserUrl() { return this.configurations.baseUrl + this._currentUserUrl; }
   //get currentUserPreferencesUrl() { return this.configurations.baseUrl + this._currentUserPreferencesUrl; }
@@ -67,6 +69,13 @@ export class TaskEndpoint extends EndpointFactory {
       }));
   }
 
+  getStatusesEndpoint<T>(): Observable<T> {
+    const endpointUrl = this.statusesUrl;
+    return this.http.get<T>(endpointUrl, this.getRequestHeaders()).pipe<T>(
+      catchError(error => {
+        return this.handleError(error, () => this.getStatusesEndpoint());
+      }));
+  }
 
   addNewTaskEndpoint<T>(taskObject: any): Observable<T> {
 

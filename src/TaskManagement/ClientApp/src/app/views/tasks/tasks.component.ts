@@ -101,7 +101,7 @@ export class TasksComponent implements OnInit, OnDestroy {
         prop: 'completed', name: '', width: 30, headerTemplate: this.statusHeaderTemplate, cellTemplate: this.statusTemplate,
         resizeable: false, canAutoResize: false, sortable: false, draggable: false
       },
-      { prop: 'taskname', name: gT('task.management.TaskName'), cellTemplate: this.nameTemplate, width: 200 },
+      { prop: 'taskName', name: gT('task.management.TaskName'), cellTemplate: this.nameTemplate, width: 200 },
       { prop: 'description', name: gT('task.management.Description'), cellTemplate: this.descriptionTemplate, width: 500 },
       {
         name: '', width: 80, cellTemplate: this.actionsTemplate, resizeable: false, canAutoResize: false, sortable: false,

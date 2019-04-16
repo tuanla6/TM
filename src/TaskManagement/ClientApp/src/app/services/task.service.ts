@@ -11,6 +11,7 @@ import { AuthService } from './auth.service';
 //import { Permission, PermissionNames, PermissionValues } from '../models/permission.model';
 //import { UserEdit } from '../models/user-edit.model';
 import { TaskInfo } from '../models/task';
+import { Status } from 'app/models/Status';
 
 
 
@@ -49,6 +50,10 @@ export class TaskService {
   getTasks(page?: number, pageSize?: number) {
 
     return this.taskEndpoint.getTasksEndpoint<TaskInfo[]>(page, pageSize);
+  }
+
+  getStatuses() {
+    return this.taskEndpoint.getStatusesEndpoint<Status[]>();
   }
 
   //getUsersAndRoles(page?: number, pageSize?: number) {

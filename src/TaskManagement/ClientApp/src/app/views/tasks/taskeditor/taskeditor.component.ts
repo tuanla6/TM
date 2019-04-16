@@ -1,8 +1,10 @@
 import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
 import { TaskInfo } from 'app/models/task';
+import { Status } from 'app/models/Status';
 import { ModalDirective } from 'ngx-bootstrap/modal';
 import { AlertService, MessageSeverity } from '../../../services/message.service';
 import { TaskService } from '../../../services/task.service';
+import { Utilities } from '../../../services/utilities';
 
 @Component({
   selector: 'app-taskeditor',
@@ -14,6 +16,7 @@ export class TaskeditorComponent implements OnInit {
   public formResetToggle = true;
   private isSaving = false;
   private isNewTask = false;
+  private statuses : Status[] = [];
   @ViewChild('f')
   private form;
   @ViewChild('editorModal')
@@ -23,14 +26,30 @@ export class TaskeditorComponent implements OnInit {
 
   @ViewChild('descriptionTemplate')
   descriptionTemplate: TemplateRef<any>;
+
+  @ViewChild('allStatus')
+  private allStatus;
+
+  @ViewChild('statusSelector')
+  private statusSelector;
   constructor(private alertService: AlertService, private taskService: TaskService) { }
   public changesSavedCallback: () => void;
   public changesFailedCallback: () => void;
   public changesCancelledCallback: () => void;
   ngOnInit() {
-    //this.taskEdit = {};
+    this.taskService.getStatuses().subscribe(statuses => this.onStatusDataLoadSuccessful(statuses),
+      error => this.onStatusDataLoadFailed(error));
   }
-
+  private onStatusDataLoadSuccessful(statuses: Status[]) {
+    this.alertService.stopLoadingMessage();    
+    this.statuses = statuses;
+  }
+  private onStatusDataLoadFailed(error: any) {
+    this.alertService.stopLoadingMessage();
+    this.alertService.showStickyMessage('Load Error',
+      `Unable to retrieve user data from the server.\r\nErrors: "${Utilities.getHttpResponseMessage(error)}"`,
+      MessageSeverity.error, error);    
+  }
   newTask() {
     this.isNewTask = true;
     this.taskEdit = new TaskInfo();

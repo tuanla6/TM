@@ -71,5 +71,14 @@ namespace TaskManagement.Controllers
 
             return BadRequest(ModelState);
         }
+
+        [HttpGet("statuses")]
+        //[Authorize(Authorization.Policies.ViewAllRolesPolicy)]
+        [ProducesResponseType(200, Type = typeof(List<StatusViewModel>))]
+        public async Task<IActionResult> GetStatuses()
+        {            
+            var statuses = await _taskManager.GetStatuses();
+            return Ok(Mapper.Map<List<StatusViewModel>>(statuses));
+        }
     }
 }

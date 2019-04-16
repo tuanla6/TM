@@ -46,5 +46,9 @@ namespace TM.Data.Core
             }            
             
         }
+        public async Task<List<Status>> GetStatuses()
+        {
+            return await _context.Statuses.ToListAsync();
+        }
     }
 }

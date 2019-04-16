@@ -10,5 +10,6 @@ namespace TM.Data.Core.Interfaces
     {
         Task<List<TaskInfo>> GetTasks(int page, int pageSize);
         Task CreateTaskAsync(TaskInfo task);
+        Task<List<Status>> GetStatuses();
     }
 }
