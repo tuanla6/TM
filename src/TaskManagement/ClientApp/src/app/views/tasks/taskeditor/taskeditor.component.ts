@@ -16,7 +16,8 @@ export class TaskeditorComponent implements OnInit {
   public formResetToggle = true;
   private isSaving = false;
   private isNewTask = false;
-  private statuses : Status[] = [];
+  private statuses: Status[] = [];
+  //private selectedStatus: Status;
   @ViewChild('f')
   private form;
   @ViewChild('editorModal')
@@ -43,6 +44,7 @@ export class TaskeditorComponent implements OnInit {
   private onStatusDataLoadSuccessful(statuses: Status[]) {
     this.alertService.stopLoadingMessage();    
     this.statuses = statuses;
+    //this.selectedStatus = statuses[0];
   }
   private onStatusDataLoadFailed(error: any) {
     this.alertService.stopLoadingMessage();

@@ -20,7 +20,7 @@ namespace TM.Data.Core
         public async Task<List<TaskInfo>> GetTasks(int page, int pageSize)
         {
             IQueryable<TaskInfo> taskQuery = _context.Tasks                
-                .OrderBy(t => t.CreatedDate);
+                .OrderByDescending(t => t.CreatedDate);
 
             if (page != -1)
                 taskQuery = taskQuery.Skip((page - 1) * pageSize);

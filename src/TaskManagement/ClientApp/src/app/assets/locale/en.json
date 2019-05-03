@@ -177,7 +177,8 @@
       "TaskNameRequired": "Task name is required",
       "Description": "Description",
       "Important": "Mark as important",
-      "AddTask": "Add Task"
+      "AddTask": "Add Task",
+      "Status" : "Status"
     }
   }
 }

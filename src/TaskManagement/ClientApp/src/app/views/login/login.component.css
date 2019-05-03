@@ -35,10 +35,13 @@
     margin-bottom: -25px;
 }
 
-
+.middle-box
+{
+  max-width:500px;
+}
 
 @media (min-width: 768px) {
-    .login-container {
+  .login-container {
         width: 700px;
     }
 }

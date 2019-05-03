@@ -28,7 +28,7 @@ namespace TaskManagement.Controllers
         [ProducesResponseType(200, Type = typeof(List<TaskViewModel>))]
         public async Task<IActionResult> GetTasks()
         {
-            return await GetTasks(-1, -1);
+            return await GetTasks(1, 15);
         }
 
         [HttpGet("tasks/{pageNumber:int}/{pageSize:int}")]        
